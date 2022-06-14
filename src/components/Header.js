@@ -64,9 +64,9 @@ function Header({ userItems, setUserItems }) {
         headerRef.current.baseURI.startsWith(
           "http://localhost:3000/moviedata/"
         ) ||
-        headerRef.current.baseURI === "https://filmbane-project.vercel.app/" ||
+        headerRef.current.baseURI === "https://filmlane.vercel.app/" ||
         headerRef.current.baseURI.startsWith(
-          "https://filmbane-project.vercel.app/#"
+          "https://filmlane.vercel.app/#"
         )
       ) {
         window.pageYOffset >= 10
