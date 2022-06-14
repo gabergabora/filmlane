@@ -8,7 +8,7 @@ function UpcomingMiveData({ item }) {
     <Link
       className="w-full mb-6"
       key={item.id}
-      to={`/moviedata/${item.title.toLowerCase()}`}
+      to={`/moviedata/${item.title.split(" ").join("_").toLowerCase()}`}
     >
       <div className=" min-h-full w-full snap-start flex flex-col justify-between gap-5">
         <div className="w-[90vw] sm:w-[95vw] md:w-auto flex justify-center items-center h-full rounded-lg overflow-hidden containerImgMovie cursor-pointer">

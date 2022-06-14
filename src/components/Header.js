@@ -50,6 +50,8 @@ function Header({ userItems, setUserItems }) {
     }
 
     headerScrollChangeBg();
+    let str = "Hossein Ghiasi";
+    console.log(str.split(" ").join("_x`"));
 
     return () => {
       clearTimeout(navContainerRef);
@@ -65,9 +67,7 @@ function Header({ userItems, setUserItems }) {
           "http://localhost:3000/moviedata/"
         ) ||
         headerRef.current.baseURI === "https://filmlane.vercel.app/" ||
-        headerRef.current.baseURI.startsWith(
-          "https://filmlane.vercel.app/#"
-        )
+        headerRef.current.baseURI.startsWith("https://filmlane.vercel.app/#")
       ) {
         window.pageYOffset >= 10
           ? headerRef.current.classList.add("bg-[#151923]") ||
