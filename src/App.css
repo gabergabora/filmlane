@@ -1,0 +1,219 @@
+::selection{
+    background-color: hsl(229, 15%, 21%);
+    color: hsl(57, 97%, 45%);
+    padding: 6px 12px;
+}
+
+:root {
+    --animate-duration: 600ms !important;
+    --animate-delay: 0.6s !important;
+  }
+
+/* / */
+
+
+.bgHeroPage{
+    background: url(./assests/img/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 750px;
+    height: 100vh;
+    max-height: 1000px;
+    color: #fff;
+    padding-top: 85px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    /* background-color: #151923; */
+    /* color: #000000; */
+}
+
+.upcomingMovieContainer{
+    background: url(./assests/img/upcoming-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.has-scrollbar{
+    scroll-snap-type: inline mandatory;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+
+.has-scrollbar::-webkit-scrollbar { 
+    height: 13px;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 3;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid hsl(57, 97%, 45%);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(0, 7%, 88%);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 black,
+              inset 0 -1px 0 black;
+
+}
+
+.containerImgMovie{
+    position: relative;
+    transition: all 0.4s ;
+    aspect-ratio: 2 / 3;
+}
+
+.containerImgMovie::after{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    /* background-color: rgba(0, 0, 0, 0.1 ); */
+    z-index: 2;
+    transition: all 0.4s ;
+}
+
+.containerImgMovie:hover { box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5); }
+
+.containerImgMovie:hover::after { background: hsla(0, 0%, 100%, 0.05); }
+
+/* / */
+
+.servicesSectionBg{
+    background: url(./assests/img/service-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-btn {
+    position: absolute;
+    bottom: 0;
+    right: 86px;
+    background: hsl(57, 97%, 45%);
+    color: hsl(225, 25%, 9%);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transform: rotate(0.25turn);
+    transform-origin: bottom right;
+    padding: 28px 35px;
+    border-radius: 6px;
+  }
+
+@media screen and (min-width:768px) {
+    .service-btn{
+        position: relative;
+        margin-left: -110px;
+        height: 100px;
+    }
+}
+
+  /* / */
+
+.bgRelatedMovie{
+    background: url(./assests/img/top-rated-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.filterBtn{
+    box-shadow: inset 0 3px 7px hsla(0, 0%, 0%, 0.8);
+    position: relative;
+}
+
+.filterBtn:focus{
+    text-shadow: 0 3px 25px hsla(57, 97%, 45%, 0.5);
+}
+
+.filterBtn:focus::after,
+.filterBtn:focus::before{
+    content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: hsl(57, 97%, 45%);
+  width: 2px;
+  height: 15px;
+}
+
+.filterBtn:focus::after{
+    left: 0;
+}
+
+.filterBtn:focus::before{
+    right: 0;
+}
+
+/* / */
+
+.bgBestSeries{
+    background: url(./assests/img/tv-series-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* / */
+
+.bgService{
+    background: url(./assests/img/cta-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* / */
+
+.bgFooterSection1{
+    background: url(./assests/img/footer-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.divider {
+    width: 100%;
+    height: 4px;
+    border-top: 1px solid  hsl(225, 25%, 9%);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.bgFooterSection2{
+    background: #171D21;
+}
+
+/* / */
+
+.bgMovieData{
+    background: url(./assests/img/footer-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* / */
+
+.bgUserMenu{
+    background-color: #00000085;
+    transition: all 0.3s;
+    position: fixed;
+
+}
+/* / */
+
+.moviePageBackground{
+    background: url(./assests/img/movie-detail-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
