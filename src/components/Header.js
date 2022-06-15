@@ -51,7 +51,7 @@ function Header({ userItems, setUserItems }) {
 
     headerScrollChangeBg();
     let str = "Hossein Ghiasi";
-    console.log(str.split(" ").join("_x`"));
+    console.log(str.split(" ").join("_"));
 
     return () => {
       clearTimeout(navContainerRef);
